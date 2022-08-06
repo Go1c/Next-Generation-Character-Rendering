@@ -21,7 +21,7 @@ Another problem is the opaque layer will cause jaggies, so I use TAA to solve th
 
 #### Detail
 
-I just use Kajiya-Kay Shading Model, it already shows a good look.The key to calclate the Kajiya-Kay specula
+I just use Kajiya-Kay Shading Model, it already shows a good look.The key to calclate the Kajiya-Kay specular is to replace the normal by tangent, then to calculate specular.
 
 
 ## Face
