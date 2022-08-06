@@ -19,6 +19,11 @@ Another problem is the opaque layer will cause jaggies, so I use TAA to solve th
 ![image](https://user-images.githubusercontent.com/56297955/182907859-33179eab-d932-4e63-9631-d6767e93b2c1.png)
 
 
+#### Detail
+
+I just use Kajiya-Kay Shading Model, it already shows a good look.The key to calclate the Kajiya-Kay specula
+
+
 ## Face
 To implement pre-integration and Separable Subsurface Scattering algorithm.(pre-integration is done)
 
