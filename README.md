@@ -22,6 +22,10 @@ Another problem is the opaque layer will cause jaggies, so I use TAA to solve th
 ## Face
 To implement pre-integration and Separable Subsurface Scattering algorithm.(pre-integration is done)
 
+### Key:
+
+(SSS + Diffuse) + Dual lobe specular + Transmittance  
+
 
 ## Eyes
 
