@@ -66,6 +66,39 @@ To implement pre-integration and Separable Subsurface Scattering algorithm.(pre-
 
 (SSS + Diffuse) + Dual lobe specular + Transmittance  
 
+Diffuse calculation just use normal PBR calculation. The key is SSS and specular.
+
+#### Classic Multilayer skin structure:
+
+
+![image](https://user-images.githubusercontent.com/56297955/183290208-5f810bba-ff58-4462-99b0-ef1035cc65a0.png)
+
+
+#### pre-integration:
+
+
+![Screenshot 2022-07-20 181356](https://user-images.githubusercontent.com/56297955/183303846-2176ef12-58e2-4d2c-9b99-80879da59e84.png)
+
+
+The distance between light incident point and exit point can't be ignored. So we should use BSSRDF to replace BRDF. Through my study, when you try pre-integration algorithm, you can directly get sss result from a look-up table, the diffuse should be the sum of normal diffuse and sss, you can regard the diffuse that we calculate earlier by the Microfacet BRDF as a special case of subsurface scattering.
+
+
+How to calculate curvature:
+
+
+![image](https://user-images.githubusercontent.com/56297955/183303663-5f8efcae-e7bc-4d70-8f3a-3a4c8c0321aa.png)
+
+
+![Face1](https://user-images.githubusercontent.com/56297955/183303689-8aae426b-18fc-428b-9430-38d5ca564fa1.png)
+
+
+#### Specular
+
+Kelemen/Szirmay-Kalos specular BRDF:
+
+
+![Face5](https://user-images.githubusercontent.com/56297955/183304103-7824a3af-3bd0-44a0-bfc4-0443d090261b.png)
+
 
 ## Eyes
 
