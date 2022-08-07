@@ -23,6 +23,22 @@ Another problem is the opaque layer will cause jaggies, so I use TAA to solve th
 
 I just use Kajiya-Kay Shading Model, it already shows a good look.The key to calclate the Kajiya-Kay specular is to replace the normal by tangent, then to calculate specular.
 
+The most important part is about the uv and tangent space, for the hair patch, the tangent(in tangent space) is along with the U direction, so we can shift the specular based on this feature, and do the specular calculation.
+
+For Strand-based anisotropic lighting, hair is a lot of wires, each is rendered as cylinder:
+
+![image](https://user-images.githubusercontent.com/56297955/183281437-5c757ea5-eb74-4aaa-b0d6-4c4c7dd3cbbb.png)
+
+The correct way to calculate specular is the integral of (N · H), but it is too heave. Consider the tangent direction, Tangent、normal、Half Vector can be placed in a plane, and the angle is 90 degrees. 
+
+![image](https://user-images.githubusercontent.com/56297955/183282518-66195017-4575-455b-8254-9c2b650c0395.png)
+
+So we can replace the (N · H) by T and H:
+
+![image](https://user-images.githubusercontent.com/56297955/183282533-2ff88385-e6ce-47b0-a838-164787f6b9a1.png)
+
+Then just use this to calculate specular, we can get the circular specular and change with the view and light direction.
+
 
 ## Face
 To implement pre-integration and Separable Subsurface Scattering algorithm.(pre-integration is done)
