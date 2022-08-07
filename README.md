@@ -100,6 +100,12 @@ Kelemen/Szirmay-Kalos specular BRDF:
 ![Face5](https://user-images.githubusercontent.com/56297955/183304103-7824a3af-3bd0-44a0-bfc4-0443d090261b.png)
 
 
+In skin layer structure, there will be multiple layers contributing to the specular, I use for reference the Dual lobe Specular in UE4 Digital Human. Use different roughness to calculate specular then mix by a certain proportion:
+
+
+![Mat](https://user-images.githubusercontent.com/56297955/183304403-851479d1-1c12-4426-8f3b-07a246a06b49.png)
+
+
 ## Eyes
 
 The eyes are rendered with a more realistic multi-layered structure
