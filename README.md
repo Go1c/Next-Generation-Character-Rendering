@@ -40,14 +40,16 @@ So we can replace the (N · H) by T and H:
 Then just use this to calculate specular, we can get the circular specular and change with the view and light direction.
 
 
-![image](https://user-images.githubusercontent.com/56297955/183283607-8224c6ce-1764-4c64-b8c1-844be7711aa5.png)
+![image](https://user-images.githubusercontent.com/56297955/183285021-4cacdd7b-d744-47dd-b30f-f5868bcf0243.png)
 
 
 And in real world, the specular should have two layers, one with color and the other has no color, and should be shifted a little to show something like jaggies.
 
+
 ![image](https://user-images.githubusercontent.com/56297955/183284813-9a383d4b-2f3d-4f16-8d18-8222dc9ede5e.png)
 
-The theory behind is shift T by Normal, T + shift * Normal means extend and rotate the T:
+
+The theory behind is shift T by Normal, T + shift * Normal means scale and rotate the T:
 
 
 
