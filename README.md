@@ -55,7 +55,7 @@ The theory behind is shift T by Normal, T + shift * Normal means scale and rotat
 ![IMG_20220807_181200_edit_433170275539632](https://user-images.githubusercontent.com/56297955/183288388-50dc2bb2-8d49-42c8-a933-2cb88753691f.jpg)
 
 
-With the projected length changed the specular position changed.
+With the projected length changed the specular position also changing.
 
 
 ## Face
