@@ -53,6 +53,11 @@ The theory behind is shift T by Normal, T + shift * Normal means scale and rotat
 
 With the projected length changed the specular position also changing.
 
+The anisotopic map:
+
+
+![image](https://user-images.githubusercontent.com/56297955/183289269-3f3e4264-198f-463e-9c76-dbc2cd7ba164.png)
+
 
 ## Face
 To implement pre-integration and Separable Subsurface Scattering algorithm.(pre-integration is done)
